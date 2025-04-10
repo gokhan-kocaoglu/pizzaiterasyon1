@@ -68,6 +68,7 @@ describe("Anasayfa yönlendirme testi", () => {
       cy.get('[data-cy="data-name"]').type("Ali");
       cy.get('[data-cy="data-size"]').find("input").first().check({ force: true });
       cy.get('[data-cy="data-dough"]').find("select").select("Orta");
+      cy.get('[data-cy="data-label-check"]').contains("Pepperoni").click();
       cy.get('[data-cy="data-submit"]').click();
       cy.contains("En az 4 malzeme seçmelisiniz.").should("be.visible");
     });

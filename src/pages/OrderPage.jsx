@@ -61,7 +61,7 @@ const OrderPage = () => {
       newErrors.name = "İsim en az 3 karakter olmalı.";
     if (!size) newErrors.size = "Lütfen boyut seçiniz.";
     if (!dough) newErrors.dough = "Lütfen hamur seçiniz.";
-    if (toppings.length < 4)
+    if (toppings.length > 0 && toppings.length < 4)
       newErrors.toppings = "En az 4 malzeme seçmelisiniz.";
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;

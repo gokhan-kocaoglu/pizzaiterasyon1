@@ -14,7 +14,7 @@ const IngredientsSelector = ({
     </p>
     <div className="checkbox-group">
       {items.map((item) => (
-        <label key={item} className="checkbox-item">
+        <label data-cy="data-label-check" key={item} className="checkbox-item">
           <input
             type="checkbox"
             value={item}
