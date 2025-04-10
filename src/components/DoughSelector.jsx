@@ -1,7 +1,7 @@
 import React from "react";
 
 const DoughSelector = ({ label, value, onChange, options }) => (
-  <div className="option-group">
+  <div className="option-group" data-cy="data-dough">
     <label>
       {label}
       <span className="required"> *</span>

@@ -6,7 +6,7 @@ const SizeSelector = ({ label, name, options, selected, onChange }) => (
       {label}
       <span className="required"> *</span>
     </label>
-    <div className="radio-group">
+    <div className="radio-group" data-cy="data-size">
       {options.map((opt) => (
         <label key={opt}>
           <input

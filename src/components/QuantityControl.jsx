@@ -4,13 +4,18 @@ const QuantityControl = ({ quantity, setQuantity }) => {
   return (
     <div className="quantity">
       <button
+        data-cy="data-btn-reduce"
         type="button"
         onClick={() => setQuantity((q) => Math.max(1, q - 1))}
       >
         -
       </button>
-      <span>{quantity}</span>
-      <button type="button" onClick={() => setQuantity((q) => q + 1)}>
+      <span data-cy="data-piece">{quantity}</span>
+      <button
+        data-cy="data-btn-increase"
+        type="button"
+        onClick={() => setQuantity((q) => q + 1)}
+      >
         +
       </button>
     </div>

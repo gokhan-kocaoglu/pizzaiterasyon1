@@ -7,7 +7,7 @@ const IngredientsSelector = ({
   onChange,
   max,
 }) => (
-  <div className="option-group">
+  <div className="option-group" data-cy="data-Ingredients">
     <label>{label}</label>
     <p className="ingredients-info">
       En fazla {max} malzeme seçebilirsiniz. 5₺

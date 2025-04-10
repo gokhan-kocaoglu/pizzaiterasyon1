@@ -1,12 +1,13 @@
 import React from "react";
 
 const NameInput = ({ label, value, onChange, error }) => (
-  <div className="option-group">
+  <div className="option-group" data-cy="data-name">
     <label>
       {label}
       <span className="required"> *</span>
     </label>
     <input
+      data-cy="data-name-input"
       type="text"
       value={value}
       onChange={onChange}

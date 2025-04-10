@@ -123,7 +123,7 @@ const OrderPage = () => {
     <>
       <Header />
       <form className="order-container" onSubmit={handleSubmit} noValidate>
-        <h2>Position Absolute Acı Pizza</h2>
+        <h2 data-cy="data-header">Position Absolute Acı Pizza</h2>
         <div className="price-rating">
           <span className="price">{BASE_PRICE.toFixed(2)}₺</span>
           <span className="rating">4.9 ⭐ (200)</span>
@@ -184,12 +184,16 @@ const OrderPage = () => {
             </p>
             <div className="summary-row">
               <span className="label">Seçimler</span>
-              <span className="light-value">{totalExtras.toFixed(2)}₺</span>
+              <span data-cy="data-light-value" className="light-value">
+                {totalExtras.toFixed(2)}₺
+              </span>
             </div>
 
             <div className="summary-row">
               <span className="red-label">Toplam</span>
-              <span className="red-value">{total.toFixed(2)}₺</span>
+              <span data-cy="data-red-value" className="red-value">
+                {total.toFixed(2)}₺
+              </span>
             </div>
             <SubmitButton disabled={isSubmitting} />
           </div>

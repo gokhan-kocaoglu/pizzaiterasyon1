@@ -2,7 +2,12 @@ import React from "react";
 
 const SubmitButton = ({ disabled }) => {
   return (
-    <button type="submit" className="order-sbutton" disabled={disabled}>
+    <button
+      data-cy="data-submit"
+      type="submit"
+      className="order-sbutton"
+      disabled={disabled}
+    >
       SİPARİŞ VER
     </button>
   );
