@@ -368,7 +368,7 @@ form.order-container {
     }
   
     .checkbox-group .checkbox-item {
-      flex: 0 1 calc(50% - 10px); /* 2 sütunlu görünüm */
+      flex: 0 1 calc(50% - 10px);
     }
   
     .order-footer {

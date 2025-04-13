@@ -97,7 +97,6 @@ const OrderPage = () => {
         );
         console.log("Sipariş Özeti:", response.data);
 
-        // Form reset
         setName("");
         setSize("");
         setDough("");
@@ -117,7 +116,7 @@ const OrderPage = () => {
     if (isSubmitting) {
       sendOrder();
     }
-  }, [isSubmitting]);
+  }, [isSubmitting, isFormValid]);
 
   return (
     <>
